@@ -5,10 +5,9 @@ public class Factorial {
         if (n < 0) {
             throw new IllegalArgumentException("n must be non-negative");
         }
-        long result = 1;
-        for (int i = 2; i <= n; i++) {
-            result *= i;
+        if (n == 0 || n == 1) {
+            return 1;
         }
-        return result;
+        return n * factorial(n - 1);
     }
 }
