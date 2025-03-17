@@ -11,3 +11,4 @@ log/
 target/
 
 hw*
+!hw1
